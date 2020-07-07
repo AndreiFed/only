@@ -14,12 +14,13 @@ body {
     line-height: 24px;
     font-weight: 400;
     //color:
-    background-color: #ccc;
+    //background-color: #ccc;
 }
 
 a {
     display: inline-block;
     text-decoration: none;
+    outline: none;
 }
 
 ul,
@@ -39,4 +40,18 @@ li {
     max-width: 1600px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    display: none;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 20px;
+    color: #888;
+    font-size: 20px;
 }

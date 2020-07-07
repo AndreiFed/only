@@ -164,7 +164,7 @@ nav a:hover {
     padding: 10px;
     color: #ff0;
     background-color: #fff;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: both;
     animation-name: boxLeft;
     animation-delay: 1s;
@@ -270,3 +270,74 @@ nav a:hover {
 }
 
 //start dom
+//to top
+$main-width: 50rem;
+// @media screen and (prefers-reduced-motion: no-prefence) {
+//     html,
+//     body {
+//         scroll-behavior: smooth;
+//     }
+// }
+// .main {
+//     position: relative;
+//     max-width: $main-width;
+//     margin: 0 auto;
+//     *:last-child {
+//         margin-bottom: 0;
+//     }
+// }
+$scrollLength: 100vh;
+.back-to-top-wrapper {
+    position: absolute;
+    top: $scrollLength;
+    right: 0.25rem;
+    bottom: -5em;
+    width: 3em;
+    pointer-events: none;
+}
+
+.back-to-top-link {
+    position: fixed;
+    position: sticky;
+    pointer-events: all;
+    top: calc(100vh - 5rem);
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    padding: 0.25rem;
+    background-color: #fff;
+    color: #000;
+    transition: transform 80ms ease-in;
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+//start recommend
+.title {
+    font-size: 30px;
+    color: #ccc;
+    margin: 0px auto;
+    padding: 20px 30px;
+}
+
+.text {
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.text__vid1 {
+    margin: 0 auto;
+}
+
+.text__vid2,
+.text__vid3 {
+    float: right;
+    margin: 0 15px;
+}
